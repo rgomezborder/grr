@@ -124,6 +124,9 @@ services:
         condition: service_healthy
     networks:
       - server-network
+    ports:
+      - "4443:4443"
+      - "10000:10000"
     expose:
       - "4443"
       - "10000"
